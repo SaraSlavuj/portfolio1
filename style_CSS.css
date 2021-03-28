@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+body{
+    margin: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*NAV BAR*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ff6699;
+    z-index: 999;
+    transition: all 0.5s ease;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: grey;
+}
+.title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;}
+
+/*HOME*/
+.homeimg{
+    width: 100%;
+    padding: 0px;
+    margin: auto;
+}
+
+/*About*/
+.about .about_div{
+    display: flex;
+    align-self: center;
+    margin: auto;
+    height: 400px;
+    width: 1000px; 
+}
+.about .about_div .profile_img{
+    object-fit: cover;
+    height: 80%;
+    border-radius: 10px;
+    margin-right: 25px;
+} 
+.about .about_div p{
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .about_div a{
+    display: inline-block;
+    background: #ff6699;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 2px solid #ff6699;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 350px ;
+}
+.about .about_div a:hover{
+    color: #ff6699;
+    background: none;
+}
+
+/*SERVICES*/
+.services{
+    color:#fff;
+    background: #111;
+    border-radius: 10px;
+}
+.services .title{
+color: #ff6699;
+}
+.services .serv-content .card{
+    height:250px;
+    margin: 10px 10px 7px 10px;;
+    background: #222;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+.services .card:hover{
+    background: #ff6699;
+}
+.services .card:hover .box{
+    transform: scale(1.05);
+}
+.services .card i{
+    font-size: 50px;
+    color: #ff6699;
+    transition: color 1s ease;
+}
+.services .card .text{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.services .card .box img{
+    height: 100px;
+}
+
+/*Vestine*/
+.skills .skills-content{
+    display: flex;
+    align-self: center;
+    margin: auto;
+    width: 1000px; 
+}
+.skills .skills-content .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+}
+.skills .skills-content .text-skils{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+}
+.skills .skills-content .left{
+    width: 500px; 
+}
+.skills .skills-content .right{
+    width: 500px;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #ff6699;
+}
+.skills-content .right .html::before{
+    width: 70%;
+}
+.skills-content .right .css::before{
+    width: 50%;
+}
+.skills-content .right .js::before{
+    width: 40%;
+}
+.skills-content .right .C::before{
+    width: 65%;
+}
+
+/* CONTRACT*/
+.contact .contact-content{
+    display: flex;
+    margin: auto;
+    color:#fff;
+    background: #111;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left{
+    width: 500px;
+    margin-left: 25%;
+    margin-right: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+.contact .contact-content .left .icons{
+    margin: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: #ff6699;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #ff6699;
+}
+.contact .contact-content img{
+    height: 30px;
+    margin: 5px;
+}
+.contact .contact-content .right{
+    margin-left: 10px;
+    margin-right: 20%;
+    width: 500px;
+    align-self: center;
+}
+.contact .contact-content .text{
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .field input{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #ff6699;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus{
+    border: 5px solid #ff6699;
+}
+.contact .right form .name{
+    margin-right: 25px;
+}
+.contact .right form .email{
+    margin-left: 25px;  
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ff6699;
+    background: #ff6699;
+    color: #fff;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color: #ff6699;
+    background: none;
+}
+
+/*FUTER*/
+footer{
+    background: #111;
+    padding: 15px 18px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: #ff6699;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
